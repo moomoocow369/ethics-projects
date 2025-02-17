@@ -1,8 +1,8 @@
 import re
 
 pword = input("Enter password: ")
-nums = '\d'
-spec = '[^a-zA-Z0-9\s]'
+nums = r'\d'
+spec = r'[^a-zA-Z0-9\s]'
 
 if len(pword) < 8:
     print("Password must be 8 characters or more.")
