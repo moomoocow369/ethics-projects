@@ -1,4 +1,4 @@
-import ref
+import re
 
 pword = input("Enter password: ")
 nums = r'\d'
