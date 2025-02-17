@@ -1,0 +1,16 @@
+import re
+
+pword = input("Enter password: ")
+nums = '\d'
+spec = '[^a-zA-Z0-9\s]'
+
+if len(pword) < 8:
+    print("Password must be 8 characters or more.")
+else:
+    if re.search(spec, pword) and re.search(nums, pword):
+        sec = 'Secure password'
+    elif re.search(nums, pword):
+        sec = 'Medium password'
+    else:
+        sec = 'Weak password'
+    print(sec)
